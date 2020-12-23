@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -17,6 +18,16 @@
   font-size: calc(10px + 2vmin);
   color: white;
   animation-iteration-count: 1;
+}
+
+.New-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
