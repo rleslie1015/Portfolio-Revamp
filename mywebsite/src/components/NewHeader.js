@@ -1,3 +1,5 @@
+import Typewriter from "typewriter-effect";
+
 const NewHeader = () => {
   return (
     <header className="New-header">

@@ -5,17 +5,6 @@
 .App-link {
   color: #61dafb;
 }
-/* elements to animate */
-.App-logo {
-  height: 80px;
-  pointer-events: none;
-  transition: transfrom 300ms ease 3s;
-  animation: App-logo-spin infinite 5s linear;
-}
-.logo-trigger {
-  /* transform: translate(260px, -560px); */
-  animation: Move-to-title 4s forwards;
-}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -37,6 +26,19 @@
   color: white;
 }
 
+/* elements to animate */
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+  transition: transfrom 100ms linear 3s;
+  animation: App-logo-spin infinite 5s linear;
+}
+
+.logo-trigger {
+  animation: Move-to-title 4s forwards 8s;
+}
+
+/* animations */
 @keyframes App-logo-spin {
   to {
     transform: rotate(360deg);
@@ -45,9 +47,10 @@
     transform: rotate(0deg);
   }
 }
+
 @keyframes Move-to-title {
   to {
-    transform: translate(260px, -560px);
+    transform: translate(260px, -590px);
   }
   from {
     transform: translate(0, 0);

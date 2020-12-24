@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import NewHeader from "./components/NewHeader";
+import Typewriter from "typewriter-effect";
 
 function App() {
   return (
@@ -10,17 +11,24 @@ function App() {
         <div className="logo-trigger">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              // .typeString("Hello World!")
+              .start()
+              .typeString("Edit <code>src/App.js</code>")
+              .callFunction(() => {
+                console.log("String typed out!");
+              })
+              .deleteAll()
+              .typeString(
+                'Hey there! <br> <a style="color: #61dafb; text-decoration: underline">About Me<a>'
+              )
+              .callFunction(() => {
+                console.log("All strings were deleted");
+              });
+          }}
+        />
       </header>
     </div>
   );
