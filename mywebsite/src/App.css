@@ -2,12 +2,20 @@
   text-align: center;
   background-color: #282c34;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-link {
+  color: #61dafb;
 }
-
+/* elements to animate */
+.App-logo {
+  height: 80px;
+  pointer-events: none;
+  transition: transfrom 300ms ease 3s;
+  animation: App-logo-spin infinite 5s linear;
+}
+.logo-trigger {
+  /* transform: translate(260px, -560px); */
+  animation: Move-to-title 4s forwards;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -17,7 +25,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  animation-iteration-count: 1;
 }
 
 .New-header {
@@ -30,64 +37,28 @@
   color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: App-logo-spin infinite 3s linear;
-  }
-
-  .App-header {
-    animation: rotateOut 3s 2s normal forwards;
-  }
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
   to {
     transform: rotate(360deg);
   }
+  from {
+    transform: rotate(0deg);
+  }
+}
+@keyframes Move-to-title {
+  to {
+    transform: translate(260px, -560px);
+  }
+  from {
+    transform: translate(0, 0);
+  }
 }
 
-.rotateOut {
-  -webkit-animation-name: rotateOut;
-  animation-name: rotateOut;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes rotateOut {
-  0% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    opacity: 1;
+@keyframes Shrink {
+  to {
+    transform: scaleZ(10px);
   }
-  100% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
-    opacity: 0;
-  }
-}
-@keyframes rotateOut {
-  0% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, 200deg);
-    transform: rotate3d(0, 0, 1, 200deg);
-    opacity: 0;
+  from {
+    transform: scaleZ(40px);
   }
 }
