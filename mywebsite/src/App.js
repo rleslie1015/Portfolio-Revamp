@@ -6,13 +6,13 @@ import { useState } from "react";
 import Typewriter from "typewriter-effect";
 
 //components
-import AboutMe from "./screens/AboutMe";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   const [showAboutMe, setShowAboutMe] = useState(false);
 
   const toggleAboutMe = () => {
-    setShowAboutMe(true);
+    setShowAboutMe(!showAboutMe);
     console.log("aboutme");
   };
 
@@ -45,7 +45,16 @@ function App() {
           />
         </div>
       </header>
-      {showAboutMe ? <AboutMe /> : <div className="hidden"></div>}
+      <div>{showAboutMe ? <AboutMe /> : <div className="hidden" />}</div>
+      <footer className="footer">
+        <small>
+          Pssstt! This site under construction. :) For my old portfolio checkout
+          out{" "}
+          <a className="App-link" href="https://leslierodriguez.dev/">
+            leslierodriguez.dev
+          </a>
+        </small>
+      </footer>
     </div>
   );
 }
