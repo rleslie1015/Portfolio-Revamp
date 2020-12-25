@@ -8,27 +8,29 @@ function App() {
       <div className="leslie">
         <h1>Leslie Rodriguez</h1>
       </div>
-      <header className="typewriter-container">
+      <header>
         <div className="logo-wrap">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .start()
-              .typeString("Edit <code>src/App.js</code>")
-              .callFunction(() => {
-                console.log("String typed out!");
-              })
-              .deleteAll()
-              .typeString(
-                'Hey there! <br> <a style="color: #61dafb; text-decoration: underline">About Me<a>'
-              )
-              .callFunction(() => {
-                console.log("All strings were deleted");
-              });
-          }}
-        />
+        <div className="typewriter-container">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .start()
+                .typeString("Edit <code>src/App.js</code>")
+                .callFunction(() => {
+                  console.log("String typed out!");
+                })
+                .deleteAll()
+                .typeString(
+                  'Hey there! <br> <a style="color: #61dafb; text-decoration: underline">About Me<a>'
+                )
+                .callFunction(() => {
+                  console.log("All strings were deleted");
+                });
+            }}
+          />
+        </div>
       </header>
     </div>
   );

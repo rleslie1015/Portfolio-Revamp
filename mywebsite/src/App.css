@@ -16,10 +16,13 @@
 .leslie {
   display: inline-flex;
   border: 1px solid #61dafb;
+  position: fixed;
+  top: 0;
 }
 
 .typewriter-container {
   border: 1px solid #61dafb;
+  animation: Move-to-title-left 3s forwards 8s;
 }
 
 /* elements to animate */
@@ -46,9 +49,18 @@
   }
 }
 
+@keyframes Move-to-title-left {
+  to {
+    transform: translate(-35vw, -48vh);
+  }
+  from {
+    transform: translate(0, 0);
+  }
+}
+
 @keyframes Move-to-title {
   to {
-    transform: translate(25vw, -40vh);
+    transform: translate(35vw, -41vh);
   }
   from {
     transform: translate(0, 0);
