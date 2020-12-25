@@ -1,8 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
+
+// effects
 import Typewriter from "typewriter-effect";
 
+//components
+import AboutMe from "./screens/AboutMe";
+
 function App() {
+  const [showAboutMe, setShowAboutMe] = useState(false);
+
+  const toggleAboutMe = () => {
+    setShowAboutMe(true);
+    console.log("aboutme");
+  };
+
   return (
     <div className="App">
       <div className="leslie">
@@ -12,7 +25,7 @@ function App() {
         <div className="logo-wrap">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
-        <div className="typewriter-container">
+        <div className="typewriter-container" onClick={toggleAboutMe}>
           <Typewriter
             onInit={(typewriter) => {
               typewriter
@@ -32,6 +45,7 @@ function App() {
           />
         </div>
       </header>
+      {showAboutMe ? <AboutMe /> : <div className="hidden"></div>}
     </div>
   );
 }

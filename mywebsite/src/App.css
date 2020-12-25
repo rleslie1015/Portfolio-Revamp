@@ -25,6 +25,12 @@
   animation: Move-to-title-left 3s forwards 8s;
 }
 
+.typewriter-container:hover {
+  cursor: pointer;
+}
+.hidden {
+  height: 140px;
+}
 /* elements to animate */
 .logo-wrap {
   animation: Move-to-title 4s forwards 2s;
@@ -51,7 +57,7 @@
 
 @keyframes Move-to-title-left {
   to {
-    transform: translate(-35vw, -48vh);
+    transform: translate(-35vw, -41vh);
   }
   from {
     transform: translate(0, 0);
@@ -60,7 +66,7 @@
 
 @keyframes Move-to-title {
   to {
-    transform: translate(35vw, -41vh);
+    transform: translate(35vw, -34vh);
   }
   from {
     transform: translate(0, 0);
