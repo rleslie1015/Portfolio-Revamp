@@ -5,8 +5,11 @@ import Typewriter from "typewriter-effect";
 function App() {
   return (
     <div className="App">
-      <header className="App-container">
-        <div className="logo-trigger">
+      <div className="leslie">
+        <h1>Leslie Rodriguez</h1>
+      </div>
+      <header className="typewriter-container">
+        <div className="logo-wrap">
           <img src={logo} className="App-logo" alt="logo" />
         </div>
         <Typewriter

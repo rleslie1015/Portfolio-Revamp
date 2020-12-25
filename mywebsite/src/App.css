@@ -1,12 +1,7 @@
 .App {
   text-align: center;
   background-color: #282c34;
-}
-.App-link {
-  color: #61dafb;
-}
-
-.App-container {
+  color: white;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -14,18 +9,30 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+.leslie {
+  display: inline-flex;
+  border: 1px solid #61dafb;
+}
+
+.typewriter-container {
+  border: 1px solid #61dafb;
 }
 
 /* elements to animate */
-.logo-trigger {
-  animation: Move-to-title 4s forwards 8s;
+.logo-wrap {
+  animation: Move-to-title 4s forwards 2s;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #61dafb;
 }
 
 .App-logo {
   height: 80px;
   pointer-events: none;
-  transition: transfrom 100ms linear 3s;
   animation: App-logo-spin infinite 5s linear;
 }
 
@@ -41,7 +48,7 @@
 
 @keyframes Move-to-title {
   to {
-    transform: translate(260px, -590px);
+    transform: translate(25vw, -40vh);
   }
   from {
     transform: translate(0, 0);
