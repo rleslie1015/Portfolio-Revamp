@@ -5,7 +5,8 @@
 .App-link {
   color: #61dafb;
 }
-.App-header {
+
+.App-container {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -16,26 +17,16 @@
   color: white;
 }
 
-.New-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* elements to animate */
+.logo-trigger {
+  animation: Move-to-title 4s forwards 8s;
 }
 
-/* elements to animate */
 .App-logo {
   height: 80px;
   pointer-events: none;
   transition: transfrom 100ms linear 3s;
   animation: App-logo-spin infinite 5s linear;
-}
-
-.logo-trigger {
-  animation: Move-to-title 4s forwards 8s;
 }
 
 /* animations */
