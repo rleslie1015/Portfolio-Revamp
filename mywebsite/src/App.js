@@ -6,7 +6,7 @@ import { useState } from "react";
 import Typewriter from "typewriter-effect";
 
 //components
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./components/aboutme/AboutMe";
 
 function App() {
   const [showAboutMe, setShowAboutMe] = useState(false);
@@ -22,9 +22,6 @@ function App() {
         <h1>Leslie Rodriguez</h1>
       </div>
       <header>
-        <div className="logo-wrap">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
         <div className="typewriter-container" onClick={toggleAboutMe}>
           <Typewriter
             onInit={(typewriter) => {
@@ -45,6 +42,9 @@ function App() {
           />
         </div>
       </header>
+      <div className="logo-wrap">
+        <img src={logo} className="App-logo" alt="logo" />
+      </div>
       <div>{showAboutMe ? <AboutMe /> : <div className="hidden" />}</div>
       <footer className="footer">
         <small>

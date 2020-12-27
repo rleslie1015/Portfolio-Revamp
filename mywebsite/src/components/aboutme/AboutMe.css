@@ -1,6 +1,11 @@
 .about-me {
   color: #61dafb;
+  width: 60vw;
 }
 section:hover {
   text-decoration: underline;
+}
+
+h3 {
+  font-size: calc(0.5px + 2vmin);
 }

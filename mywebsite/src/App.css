@@ -8,7 +8,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 .App-link {
   color: #61dafb;
@@ -41,7 +40,9 @@
   display: flex;
   justify-content: center;
 }
-
+header {
+  height: calc(10px + 2vmin);
+}
 .App-logo {
   height: 80px;
   pointer-events: none;
@@ -60,7 +61,7 @@
 
 @keyframes Move-to-title-left {
   to {
-    transform: translate(-35vw, -41vh);
+    transform: translate(-35vw, -24vh);
   }
   from {
     transform: translate(0, 0);
@@ -69,7 +70,7 @@
 
 @keyframes Move-to-title {
   to {
-    transform: translate(35vw, -34vh);
+    transform: translate(35vw, -30vh);
   }
   from {
     transform: translate(0, 0);
