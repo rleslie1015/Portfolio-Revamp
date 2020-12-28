@@ -6,3 +6,9 @@
 section:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 315px) {
+  .about-me {
+    width: 80vw;
+  }
+}
