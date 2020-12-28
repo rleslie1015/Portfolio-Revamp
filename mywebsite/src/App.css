@@ -57,6 +57,7 @@ header {
   top: 50%;
   animation: Move-to-title 4s forwards 4s;
 }
+
 /* animations */
 @keyframes App-logo-spin {
   to {
