@@ -4,13 +4,18 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 //components
 import Home from "./screens/Home.js";
+import Journey from "./screens/Journey.js";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Home />
-
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/journey">
+          <Journey />
+        </Route>
         <footer className="footer">
           <small>
             Pssstt! This site under construction. :) For my old portfolio

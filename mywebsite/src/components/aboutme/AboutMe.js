@@ -1,5 +1,6 @@
 import "./AboutMe.css";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   return (
@@ -8,11 +9,21 @@ const AboutMe = () => {
         👋 Hello, my name is Leslie Rodriguez, I’m a Developer based in Texas
         and this is a selection of my personal and professional work.
       </h3>
-      <section>journey</section>
-      <section>skills</section>
-      <section>projects</section>
-      <section>blog</section>
-      <section>contact me</section>
+      <Link to="/journey">
+        <section>journey</section>
+      </Link>
+      <Link>
+        <section>skills</section>
+      </Link>
+      <Link>
+        <section>projects</section>
+      </Link>
+      <Link>
+        <section>blog</section>
+      </Link>
+      <Link>
+        <section>contact me</section>
+      </Link>
     </div>
   );
 };

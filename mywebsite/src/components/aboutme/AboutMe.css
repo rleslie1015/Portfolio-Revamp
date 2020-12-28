@@ -1,8 +1,11 @@
 .about-me {
-  color: #61dafb;
   width: 35vw;
+  color: #61dafb;
 }
 
+section {
+  color: #61dafb;
+}
 section:hover {
   text-decoration: underline;
 }

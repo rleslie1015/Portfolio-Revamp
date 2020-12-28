@@ -104,26 +104,3 @@ header {
     top: 90px;
   }
 }
-/* @media (min-width: 635px) {
-  .logo-wrap {
-    animation: Move-to-title 4s forwards;
-  }
-}
-
-@media (min-width: 635px) {
-  .typewriter-container {
-    animation: Move-to-title-left 3s forwards 4s;
-  }
-}
-
-@media (max-height: 635px) {
-  .logo-wrap {
-    animation: Move-to-title 4s forwards;
-  }
-}
-
-@media (max-height: 635px) {
-  .typewriter-container {
-    animation: Move-to-title-left 3s forwards 4s;
-  }
-} */
