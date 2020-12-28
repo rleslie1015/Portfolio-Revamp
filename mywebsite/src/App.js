@@ -13,9 +13,11 @@ function App() {
         <Route path="/">
           <Home />
         </Route>
-        <Route path="/journey">
-          <Journey />
-        </Route>
+        <Switch>
+          <Route path="/journey">
+            <Journey />
+          </Route>
+        </Switch>
         <footer className="footer">
           <small>
             Pssstt! This site under construction. :) For my old portfolio

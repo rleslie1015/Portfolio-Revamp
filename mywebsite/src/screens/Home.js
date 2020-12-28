@@ -18,9 +18,9 @@ function Home() {
 
   return (
     <div className="App">
-      <div className="leslie">
+      {/* <div className="leslie">
         <h1>Leslie Rodriguez</h1>
-      </div>
+      </div> */}
       <header>
         <div className="intro">
           <div className="typewriter-container" onClick={toggleAboutMe}>

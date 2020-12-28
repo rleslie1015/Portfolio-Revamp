@@ -7,8 +7,10 @@ import { Link } from "react-router-dom";
 import JourneyComponent from "../components/journey/JourneyComponent";
 
 const Journey = () => {
+  const anchor = document.querySelector("#journey");
+  anchor && anchor.scrollIntoView({ behavior: "smooth", block: "center" });
   return (
-    <div className="about-me">
+    <div id="journey" className="about-me">
       <Link to="/">
         <nav>Home</nav>
       </Link>
