@@ -18,7 +18,7 @@ function Home() {
   };
 
   return (
-    <div>
+    <div className="App">
       <div className="leslie">
         <h1>Leslie Rodriguez</h1>
       </div>
