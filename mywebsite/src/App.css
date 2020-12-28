@@ -41,17 +41,21 @@ header {
 .App-logo {
   height: 80px;
   pointer-events: none;
+
   animation: App-logo-spin infinite 5s linear;
 }
 /* elements to animate */
 .logo-wrap {
   position: fixed;
+  right: 50%;
   animation: Move-to-title-left 3s forwards 4s;
 }
 
-.typewriter-container {
+.intro {
   position: fixed;
-  animation: Move-to-title 4s forwards 2s;
+  left: 50%;
+  top: 50%;
+  animation: Move-to-title 4s forwards 4s;
 }
 /* animations */
 @keyframes App-logo-spin {
@@ -77,7 +81,7 @@ header {
 @keyframes Move-to-title {
   from {
     top: 50%;
-    right: 50%;
+    right: 60%;
   }
   to {
     top: 2%;
