@@ -18,33 +18,35 @@ function App() {
 
   return (
     <div className="App">
-      <div className="leslie">
-        <h1>Leslie Rodriguez</h1>
-      </div>
       <header>
-        <div className="typewriter-container" onClick={toggleAboutMe}>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .start()
-                .typeString("Edit <code>src/App.js</code>")
-                .callFunction(() => {
-                  console.log("String typed out!");
-                })
-                .deleteAll()
-                .typeString(
-                  'Hey there! <br> <a style="color: #61dafb; text-decoration: underline">About Me<a>'
-                )
-                .callFunction(() => {
-                  console.log("All strings were deleted");
-                });
-            }}
-          />
+        <div className="leslie">
+          <h1>Leslie Rodriguez</h1>
+        </div>
+        <div className="intro">
+          <div className="typewriter-container" onClick={toggleAboutMe}>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .start()
+                  .typeString("Edit <code>src/App.js</code>")
+                  .callFunction(() => {
+                    console.log("String typed out!");
+                  })
+                  .deleteAll()
+                  .typeString(
+                    'Hey there! <br> <a style="color: #61dafb; text-decoration: underline">About Me<a>'
+                  )
+                  .callFunction(() => {
+                    console.log("All strings were deleted");
+                  });
+              }}
+            />
+          </div>
+        </div>
+        <div className="logo-wrap">
+          <img src={logo} className="App-logo" alt="logo" />
         </div>
       </header>
-      <div className="logo-wrap">
-        <img src={logo} className="App-logo" alt="logo" />
-      </div>
       <div>{showAboutMe ? <AboutMe /> : <div className="hidden" />}</div>
       <footer className="footer">
         <small>

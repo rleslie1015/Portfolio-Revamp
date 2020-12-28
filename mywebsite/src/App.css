@@ -12,19 +12,22 @@
 .App-link {
   color: #61dafb;
 }
-.leslie {
-  display: inline-flex;
-  position: fixed;
-  top: 0;
+header {
+  display: flex;
+  flex-direction: column;
 }
 
-.typewriter-container {
-  animation: Move-to-title-left 3s forwards 8s;
+.leslie {
+  display: inline-flex;
+  width: 5%;
+  position: fixed;
+  top: 0;
 }
 
 .typewriter-container:hover {
   cursor: pointer;
 }
+
 .hidden {
   height: 140px;
 }
@@ -34,13 +37,8 @@
   bottom: 0;
   padding-bottom: 15px;
 }
-/* elements to animate */
-.logo-wrap {
-  animation: Move-to-title 4s forwards 2s;
-  display: flex;
-  justify-content: center;
-}
-header {
+
+.intro {
   height: calc(10px + 2vmin);
 }
 .App-logo {
@@ -48,7 +46,16 @@ header {
   pointer-events: none;
   animation: App-logo-spin infinite 5s linear;
 }
+/* elements to animate */
+.logo-wrap {
+  position: fixed;
+  animation: Move-to-title-left 3s forwards 4s;
+}
 
+.typewriter-container {
+  position: fixed;
+  animation: Move-to-title 4s forwards 2s;
+}
 /* animations */
 @keyframes App-logo-spin {
   to {
@@ -60,20 +67,24 @@ header {
 }
 
 @keyframes Move-to-title-left {
-  to {
-    transform: translate(-35vw, -24vh);
-  }
   from {
-    transform: translate(0, 0);
+    top: 50%;
+    left: 50%;
+  }
+  to {
+    top: 0;
+    left: 20%;
   }
 }
 
 @keyframes Move-to-title {
-  to {
-    transform: translate(35vw, -30vh);
-  }
   from {
-    transform: translate(0, 0);
+    top: 50%;
+    right: 50%;
+  }
+  to {
+    top: 2%;
+    right: 15%;
   }
 }
 
@@ -85,3 +96,32 @@ header {
     transform: scaleZ(40px);
   }
 }
+@media (max-width: 480px) {
+  .leslie {
+    left: 100px;
+    top: 90px;
+  }
+}
+/* @media (min-width: 635px) {
+  .logo-wrap {
+    animation: Move-to-title 4s forwards;
+  }
+}
+
+@media (min-width: 635px) {
+  .typewriter-container {
+    animation: Move-to-title-left 3s forwards 4s;
+  }
+}
+
+@media (max-height: 635px) {
+  .logo-wrap {
+    animation: Move-to-title 4s forwards;
+  }
+}
+
+@media (max-height: 635px) {
+  .typewriter-container {
+    animation: Move-to-title-left 3s forwards 4s;
+  }
+} */
