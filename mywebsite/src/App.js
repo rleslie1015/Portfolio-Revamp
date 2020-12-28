@@ -18,10 +18,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="leslie">
+        <h1>Leslie Rodriguez</h1>
+      </div>
       <header>
-        <div className="leslie">
-          <h1>Leslie Rodriguez</h1>
-        </div>
         <div className="intro">
           <div className="typewriter-container" onClick={toggleAboutMe}>
             <Typewriter
