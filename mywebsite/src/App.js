@@ -24,7 +24,8 @@ function App() {
             checkout out{" "}
             <a className="App-link" href="https://leslierodriguez.dev/">
               leslierodriguez.dev
-            </a>
+            </a>{" "}
+            Or click on projects to see my most current work.
           </small>
         </footer>
       </div>
